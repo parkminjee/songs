@@ -6,7 +6,7 @@ public class Songs {
 	private String album;
 	private String composer;
 	private int year;
-	private int track;
+	private int track2;
 	
 	public Songs(String title, String album, String artist, String composer, int track, int year){
 		this.title = title;
@@ -14,7 +14,7 @@ public class Songs {
 		this.artist = artist;
 		this.composer = composer;
 		this.year=year;
-		this.track=track;
+		this.track2=track;
 	}
 	public String getTitle() {
 		return title;
@@ -47,13 +47,13 @@ public class Songs {
 		this.year = year;
 	}
 	public int getTrack() {
-		return track;
+		return track2;
 	}
 	public void setTrack(int track) {
-		this.track = track;
+		this.track2 = track;
 	}
 	
 	public void show(){
-		System.out.println(artist+" "+title+"("+album+","+year+","+track+"번 track,"+composer+" 작곡"+")");
+		System.out.println(artist+" "+title+"("+album+","+year+","+track2+"번 track,"+composer+" 작곡"+")");
 	}
 }
